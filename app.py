@@ -24,20 +24,20 @@ st_slope = st.selectbox('st slope',['UP','Flat','Down'])
 
 
 if st.button('Predict'):
-    raw_input = { 
-        'Age': age,
-        'RestingBP' :Resting_bp,
-        'Cholestrol'  : cholestrol,
-        'FastingBS' : fasting_bs,
-        'MAxHR': max_hr,
-        'Old_peak':oldpeak,
-        'Sex_'+ sex:1,
-        'Chestpain' + chest_pain: 1,
-        'Resting_EGC'+ resting_ecg: 1,
-        'ExerciseAngina' +exercise_angina:1,
-        'St_slope' + st_slope: 1
-
-    } 
+    raw_input = {
+    'Age': age,
+    'RestingBP': Resting_bp,
+    'Cholesterol': cholestrol,
+    'FastingBS': fasting_bs,
+    'MaxHR': max_hr,
+    'Oldpeak': oldpeak,
+    'Sex_' + sex: 1,
+    'ChestPainType_' + chest_pain: 1,
+    'RestingECG_' + resting_ecg: 1,
+    'ExerciseAngina_' + exercise_angina: 1,
+    'ST_Slope_' + st_slope: 1
+}
+    
 
     input_df = pd.DataFrame([raw_input]) 
 
@@ -54,4 +54,4 @@ if st.button('Predict'):
     if prediction == 1:
         st.error('💀 HIGH RISK OF HEART DISEASE ') 
     else:
-        st.sucess('😊😊 LOW RISK OF HEART DISEASE') 
+        st.success('😊😊 LOW RISK OF HEART DISEASE') 
