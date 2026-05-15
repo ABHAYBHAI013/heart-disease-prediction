@@ -74,10 +74,10 @@ Some important features used in the dataset:
 
 | Model | Accuracy |
 |-------|----------|
-| Logistic Regression | XX% |
-| KNN | XX% |
-| Decision Tree | XX% |
-| Naive Bayes | XX% |
+| Logistic Regression | 86.61% |
+| KNN | 86.41% |
+| Decision Tree | 76% |
+| Naive Bayes | 85.14% |
 
 > Replace XX with your actual accuracy scores.
 
